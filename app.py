@@ -8,7 +8,7 @@ from nltk.stem.porter import PorterStemmer
 
 ps = PorterStemmer()
 
-
+nltk.download('stopwords')
 def transform_text(text):
     text = re.sub(r"@\S+|https?:\S+|http?:\S|[^A-Za-z0-9]|\b\S+\.\S+\b", ' ', text)
 
