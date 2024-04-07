@@ -41,6 +41,6 @@ if st.button('Predict'):
     result = model.predict(vector_input)[0]
     # 4. Display
     if result == 1:
-        st.header("Depressed")
+        st.header("Depressive")
     else:
         st.header("Normal")
